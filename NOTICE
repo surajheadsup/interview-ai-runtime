@@ -1,0 +1,15 @@
+Prebuilt llama.cpp and whisper.cpp server binaries for interview-ai Local AI mode.
+
+This repository holds no source code. It exists so the application does not
+depend on a third-party repository for its runtime binaries. The files are
+published as release assets, not committed here.
+
+Each binary is pinned by SHA-256 in interview-ai's src/utils/native-ai-runtime.js
+and verified after download. A checksum mismatch is rejected rather than executed,
+so replacing an asset here cannot cause a client to run unexpected code.
+
+checksums.txt in this repository is the authoritative manifest for the
+local-ai-binaries-v1 release.
+
+llama.cpp   - MIT, https://github.com/ggml-org/llama.cpp
+whisper.cpp - MIT, https://github.com/ggml-org/whisper.cpp
